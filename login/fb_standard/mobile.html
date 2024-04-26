@@ -301,6 +301,20 @@
     class="touch x2 android _fzu _50-3 iframe acw portrait"
     bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjE0Iiwic2NvcmUiOjIwMDE0fV0="
     style="min-height: 858px; background-color: rgb(255, 255, 255)">
+    <script id="u_0_f">
+      (function (a) {
+        a.__updateOrientation = function () {
+          var b = !!a.orientation && a.orientation !== 180,
+            c = document.body;
+          c &&
+            (c.className =
+              c.className.replace(/(^|\s)(landscape|portrait)(\s|$)/g, " ") +
+              " " +
+              (b ? "landscape" : "portrait"));
+          return b;
+        };
+      })(window);
+    </script>
     <div
       id="viewport"
       data-kaios-focus-transparent="1"
@@ -320,46 +334,7 @@
         <div class="_129_" id="header-notices"></div>
         <div
           id="m:chrome:schedulable-graph-search"
-          data-referrer="m:chrome:schedulable-graph-search">
-          <div class="_a-5 _13gt _7n0e" id="u_0_j_Rp">
-            <form
-              class="_13e_"
-              id="login_form"
-              action="login.php"
-              data-autoid="autoid_4"
-              novalidate="1"
-              method="post"
-              onsubmit="">
-              <div class="_13fn">
-                <i class="_7mt-"></i
-                ><input
-                  id="main-search-input"
-                  data-sigil="search-small-box"
-                  class="_5-lx"
-                  type="search"
-                  name="query"
-                  placeholder="Search"
-                  autocomplete="off"
-                  autocorrect="off"
-                  autocapitalize="off"
-                  data-autoid="autoid_2" /><label
-                  for="main-search-input"
-                  class="_13fo"
-                  >Search</label
-                ><a
-                  href="#"
-                  class="_5-ly"
-                  role="button"
-                  data-autoid="autoid_3"
-                  style="display: none"
-                  >Clear</a
-                >
-              </div>
-              <a href="#" class="_3k_n" data-autoid="autoid_5">Cancel</a>
-            </form>
-            <div class="_5-lw" data-autoid="autoid_1"></div>
-          </div>
-        </div>
+          data-referrer="m:chrome:schedulable-graph-search"></div>
         <div
           class="_5soa acw"
           id="root"
@@ -444,6 +419,7 @@
                                 class="_56bg _4u9z _5ruq _8qtn"
                                 autocomplete="on"
                                 id="m_login_email"
+                                type="text"
                                 name="email"
                                 placeholder="Número de celular o correo electrónico"
                                 data-sigil="m_login_email" />
@@ -508,6 +484,7 @@
                             value="Log in"
                             class="_54k8 _52jh _56bs _56b_ _28lf _9cow _56bw _56bu"
                             name="login"
+                            id="u_0_5"
                             data-sigil="touchable login_button_block m_login_button"
                             data-autoid="autoid_9">
                             <span class="_55sr">Iniciar sesión</span>
